@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Portafolio BBVA</title>
+</head>
+<body>
+
+    <nav class="bar">
+      <div class="bar-container">
+        <div class="bar-brand">
+            <a href="https://www.facebook.com/Britthanny25" target="_blank">
+                <img src="FACEBOOK.jpg" alt="Facebook"></a>  
+                <a href="https://www.linkedin.com/in/britney-hernandez-b767a414b/?originalSubdomain=mx" target="_blank">
+                    <img src="INDEED.jpg" alt="Indeed"></a>  
+
+                <a href="https://www.linkedin.com/in/brithney-karen-hern%C3%A1ndez-guzm%C3%A1n-a41820228/" target="_blank">
+                    <img src="LK.jpg" alt="LinkedIn">
+                  </a>        
+        </div>
+      </nav>  
+          </a>
+
+</div><!-- .sheetSlider -->
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<h2 style="text-align: justify;">
+    <div style="text-align: center;">
+        <span style="font-size: xx-large;">Bienvenido(a) a mi portafolio</span></h2>
+    </div>
+    
+    
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+    <div style="text-align: center;">
+        <span style="font-size: large;">Mi nombre es Brithney Hernández, tengo 22 años</span></h2>
+    </div>  
+    <div style="text-align: center;">
+        <span style="font-size: large;">Soy una persona versátil apasionada por la economía y el análisis de datos</span>
+    </div>    
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+<div style="text-align: justify;">
+<br /></div>
+
+<section class="banner banner-powerbi">
+  <div class="content-container">
+    <div class="text-container banner-text" style="text-align: left;">
+      <h3 class="text-sm">CREACIÓN DE REDES EN POWER BI</h3>
+      <p class="text-xs">
+        Desarrollé nodos en Power BI para visualizar y analizar datos del comercio mundial con ayuda
+        del complemento Drill Down Graph PRO
+      </p>
+    </div>
+    <div class="video-container">
+      <video width="560" height="315" controls>
+        <source src="Nodo power bi.mp4" type="video/mp4">
+        Tu navegador no admite el elemento de video.
+      </video>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+
+<section class="banner">
+  <div class="content-container" style="position: relative;">
+    <div class="text-container banner-text" style="text-align: left;">
+      <h3 class="text-sm">GESTIÓN DE CARTERAS</h3>
+      <p class="text-xs">
+        Con ayuda de Python, obtuve una cartera diversificada con el fin de obtener los mejores rendimientos y el menor riesgo.
+        <a href="https://colab.research.google.com/drive/119VFSp8cfCbr_DwHhL7Ryc6QrKE8GEsQ?usp=sharing" target="_blank">Ver más</a>
+      </p>
+    </div>
+    <div class="image-container" style="position: relative;">
+      <button id="cambiar-izquierda1" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-8 8 8 8 8-8-8-8z"/></svg>
+      </button>
+      <img id="cambiar-imagen1" src="porta.jpg" alt="Imagen" style="width: 400px; height: 400px;">
+      <button id="cambiar-derecha1" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l8 8-8 8-8-8 8-8z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Script para cambiar las imágenes con los botones -->
+<script>
+  // Obtener la referencia del elemento de imagen y de los botones
+  const imagen1 = document.getElementById('cambiar-imagen1');
+  const botonIzquierda1 = document.getElementById('cambiar-izquierda1');
+  const botonDerecha1 = document.getElementById('cambiar-derecha1');
+  let contador1 = 1;
+  const maxContador1 = 3;
+
+  // Agregar un listener de evento de clic al botón de la izquierda
+  botonIzquierda1.addEventListener('click', function() {
+    contador1--;
+    if (contador1 < 1) {
+      contador1 = maxContador1;
+    }
+    cambiarImagen1();
+  });
+
+  // Agregar un listener de evento de clic al botón de la derecha
+  botonDerecha1.addEventListener('click', function() {
+    contador1++;
+    if (contador1 > maxContador1) {
+      contador1 = 1;
+    }
+    cambiarImagen1();
+  });
+
+  // Función para cambiar la imagen según el contador
+  function cambiarImagen1() {
+    const rutasImagenes1 = {
+      1: 'porta.jpg',
+      2: 'PORTA1.jpg',
+      3: 'PORTA2.jpg',
+    };
+    imagen1.src = rutasImagenes1[contador1];
+  }
+</script>
+<div class="divider"></div>
+
+
+
+
+<div class="divider"></div>
+<section class="banner banner-series">
+  <div class="content-container" style="position: relative;">
+    <div class="text-container banner-text" style="text-align: left;">
+      <h3 class="text-sm">ANALISIS DE REGRESIÓN LINEAL</h3>
+      <p class="text-xs">
+        Realización de análisis de series de tiempo con el fin de pronosticar.
+      </p>
+    </div>
+    <div class="image-container" style="position: relative;">
+      <button id="cambiar-izquierda2" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer; color: white;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-8 8 8 8 8-8-8-8z"/></svg>
+      </button>
+      <img id="cambiar-imagen2" src="St.jpg" alt="Imagen" style="width: 400px; height: 400px;">
+      <button id="cambiar-derecha2" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: transparent; border: none; cursor: pointer; color: white;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l8 8-8 8-8-8 8-8z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Script para cambiar las imágenes con los botones -->
+<script>
+  // Obtener la referencia del elemento de imagen y de los botones
+  const imagen2 = document.getElementById('cambiar-imagen2');
+  const botonIzquierda2 = document.getElementById('cambiar-izquierda2');
+  const botonDerecha2 = document.getElementById('cambiar-derecha2');
+  let contador2 = 1;
+  const maxContador2 = 2;
+
+  // Agregar un listener de evento de clic al botón de la izquierda
+  botonIzquierda2.addEventListener('click', function() {
+    contador2--;
+    if (contador2 < 1) {
+      contador2 = maxContador2;
+    }
+    cambiarImagen2();
+  });
+
+  // Agregar un listener de evento de clic al botón de la derecha
+  botonDerecha2.addEventListener('click', function() {
+    contador2++;
+    if (contador2 > maxContador2) {
+      contador2 = 1;
+    }
+    cambiarImagen2();
+  });
+
+  // Función para cambiar la imagen según el contador
+  function cambiarImagen2() {
+    const rutasImagenes2 = {
+      1: 'St.jpg',
+      2: 'St2.jpg',
+    };
+    imagen2.src = rutasImagenes2[contador2];
+  }
+</script>
+<div class="divider"></div>
+
+
+
+
+<section class="banner banner-mapeo">
+  <div class="content-container" style="position: relative;">
+    <div class="text-container banner-text" style="text-align: left;">
+      <h3 class="text-sm">MAPEOS</h3>
+      <p class="text-xs">
+          Representación en mapas interactivos que permite explorar y analizar visualmente los patrones y tendencias geográficas. 
+      </p>
+    </div>
+    <div class="image-container" style="position: relative;">
+      <img id="cambiar-imagen3" src="mapeo.jpg" alt="Imagen" style="width: 400px; height: 400px;">
+    </div>
+  </div>
+</section>
+
+</script>
+
+
+
+
+
+
+<div class="divider"></div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="social">
+      <p>© 2023 Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+</footer>
+
+
+
+  </body>
+  
+  </html>

@@ -1,0 +1,299 @@
+:root {
+  --color-primary: #9b6993;
+  --color-secondary: #db1589;
+  --color-extra: #dadada;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: black;
+  background-color: #e2f2fd; /* Color claro que combina con morado y verde */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+/* Establecer el ancho máximo para las imágenes */
+.resizable-image {
+  max-width: 300px;
+  height: auto;
+}
+
+p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+img {
+  max-width: 100%;
+}
+section a {
+  color: rgb(201, 115, 158);
+}
+/* Barra de navegación */
+.bar {
+  width: 100%;
+  height: auto;
+  background-color: #f5f4f4;
+  padding: 8px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.bar ul {
+  display: flex;
+  align-items: center;
+}
+.bar li {
+  margin: 0 15px;
+  font-weight: bold;
+}
+.bar a {
+  color: black;
+  text-decoration: none;
+}
+.bar a:hover {
+  color: var(--color-primary);
+}
+.bar-brand img {
+  width: 50px;
+  height: 50px;
+}
+.bar-nav-left {
+  text-transform: uppercase;
+  flex: 1;
+  margin-left: 20px;
+}
+.bar-nav-right li:nth-child(2) {
+  margin: 0 5px;
+}
+/* Pie de página */
+.footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.social img {
+  width: 35px;
+  height: 35px;
+}
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
+}
+/* Bloques */
+.bloque {
+  margin-bottom: 30px;
+}
+.bloque-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.bloque-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.bloque-text .btn {
+  margin-top: 20px;
+}
+
+.bloque-text2 {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.bloque-text2 .btn {
+  margin-top: 20px;
+}
+/* Estilos de cuadrícula */
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-reversed :first-child {
+  order: 2;
+}
+/* Botones */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px black solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-dark-outline {
+  border-color: black;
+  color: black;
+}
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
+  background-color: rgb(35, 37, 37);
+}
+.btn-light-outline {
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.btn-dark {
+  background-color:black;
+  color: rgb(240, 235, 235);
+}
+/* Fondos */
+.bg-primary {
+  background-color: var(--color-primary);
+  color: rgb(243, 242, 242);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+  color: rgb(255, 255, 255);
+}
+/* Estilo de texto */
+.text-center {
+  text-align: center;
+}
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/* Padding */
+.py-md {
+  padding: 20px 0;
+}
+
+.banner {
+  background-color: #d6b2d6;
+  padding: 20px;
+  color: #0a0a0a;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-container {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.image-container {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.text-sm {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-xs {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color:#fcfcfc;
+  padding: 20px;
+  text-align: center;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.banner a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+.banner-powerbi {
+  background-color: #c48888;
+  text-align: left;
+}
+
+.banner-powerbi {
+  background-color: #ec9cd4;
+}
+
+.banner-series {
+  background-color: #ecd99c;
+}
+
+.banner-mapeo {
+  background-color: #9dddcd;
+}
+
+
+

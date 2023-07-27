@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Proyecto Final</title>
+</head>
+<body>
+
+    <nav class="bar">
+      <div class="bar-container">
+        <div class="bar-brand">
+            <a href="https://www.facebook.com/Britthanny25" target="_blank">
+                <img src="FACEBOOK.jpg" alt="Facebook"></a>  
+                <a href="https://www.linkedin.com/in/britney-hernandez-b767a414b/?originalSubdomain=mx" target="_blank">
+                    <img src="INDEED.jpg" alt="Indeed"></a>  
+
+                <a href="https://www.linkedin.com/in/brithney-karen-hern%C3%A1ndez-guzm%C3%A1n-a41820228/" target="_blank">
+                    <img src="LK.jpg" alt="LinkedIn">
+                  </a>        
+        </div>
+      </nav>  
+          </a>
+
+</div><!-- .sheetSlider -->
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<h2 style="text-align: justify;">
+    <div style="text-align: center;">
+        <span style="font-size: xx-large;">Bienvenido(a) a mi portafolio</span></h2>
+    </div>
+    
+    
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+    <div style="text-align: center;">
+        <span style="font-size: large;">Mi nombre es Brithney Hernandez, tengo 22 años</span></h2>
+    </div>  
+    <div style="text-align: center;">
+        <span style="font-size: large;">Soy una persona versátil apasionada por la economía y el análisis de datos</span>
+    </div>    
+<div style="text-align: justify;">
+<span style="font-size: large;"><br /></span></div>
+<div style="text-align: justify;">
+<div style="text-align: justify;">
+<br /></div>
+
+<section class="bloque bloque-a bg-primary text-center py-md">
+    <div class="bloque-inner">
+      <h3 class="text-sm">GESTIÓN DE CARTERAS</h3>
+      <p class="text-xs">
+        Con ayuda de Python, obtuve una cartera diversificada con el fin de obtener los mejores rendimientos y el menor riesgo.
+        <a href="https://colab.research.google.com/drive/119VFSp8cfCbr_DwHhL7Ryc6QrKE8GEsQ?usp=sharing" target="_blank">Ver más</a>
+      </p>
+      <div class="image-container">
+        <img src="PORTA1.jpg" alt="Imagen en movimiento" id="cambiar-imagen">
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // Obtener la referencia del elemento de imagen
+    const imagen = document.getElementById('cambiar-imagen');
+    let contador = 1;
+  
+    // Agregar un listener de evento de clic a la imagen
+    imagen.addEventListener('click', function() {
+      contador++;
+      if (contador > 5) {
+        contador = 1;
+      }
+  
+      // Rutas de imagen para cada contador
+      const rutasImagenes = {
+        1: 'porta.jpg',
+        2: 'PORTA2.jpg',
+        3: 'PORTA3.jpg',
+        4: 'PORTA4.jpg',
+        5: 'PORTA5.jpg',
+      };
+  
+      imagen.src = rutasImagenes[contador];
+    });
+  </script>
+  
+  <div class="divider"></div>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social">
+        <a href="https://facebook.com">
+          <img src="https://img.icons8.com/ios-glyphs/512/facebook-new.png" alt="" />
+        </a>
+      </div>
+      <p>© 2023 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  </body>
+  
+  </html>
